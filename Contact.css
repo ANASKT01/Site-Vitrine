@@ -1,0 +1,187 @@
+/* Définit la taille du logo dans la barre de navigation */
+.nav_logo
+{
+  width: 200px;
+  height: 100px;
+}
+
+nav
+{
+  display: flex;
+  justify-content: space-around;
+  background-color: rgba(0, 0, 0, 0.494);/* Couleur d'arrière-plan semi-transparente */
+}
+  
+.menu
+{ 
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+  
+.menu li
+{
+  padding: 0px 2em;         /* Ajoute un espace horizontal autour des éléments de liste */
+  list-style-type: none;    /* Supprime les puces des éléments de liste */
+}
+
+/* Style pour les liens du menu */
+.menu li a 
+{
+  text-decoration: none;    /* Supprime le soulignement des liens */
+  color: antiquewhite;
+}
+/* Change la couleur des links lorsqu'ils sont survolés */
+nav ul li a:hover
+{
+  color: darkcyan;
+}
+/* Style pour l'arrière-plan du body */
+body
+{
+  background-image: url(img/mansory_venatus_coupe_30.webp);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed; 
+  min-height: 100vh;
+}
+
+h1 
+{
+  font-size: 24px;
+}
+  
+label 
+{
+  display: block;
+  font-size: 18px;
+  margin-top: 20px;
+}
+/* Style des éléments de saisie et des zones de texte*/
+input,
+textarea 
+{
+  font-size: 16px;
+  width: 100%;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+/* Style du bouton de la section de contact */
+.contact-section_button 
+{
+  display: inline-block;
+  background-color: #333;
+  color: #fff;
+  font-size: 18px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+  
+.contact-section_button:hover 
+{
+  background-color: #555;
+}
+/* Style de la section de contact */
+.contact-section 
+{
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #f4f4f4;
+  border-radius: 5px;
+}
+  
+  /* media queries pour telephone  */
+@media (max-width: 480px) 
+{
+  body 
+  {
+    font-size: 14px;
+  }
+}
+
+/* Media query pour les tablettes */
+@media (min-width: 481px) and (max-width: 768px) 
+{
+  body 
+  {
+    font-size: 16px;
+  }
+}
+
+/* Style du pied de page */
+footer 
+{
+  background-color: #333;
+  color: #fff;
+}
+/* Style du conteneur du pied de page */
+.footer-container 
+{
+  display: flex;
+  justify-content: space-between;
+  padding: 30px;
+  flex-wrap: wrap;
+}
+  
+.footer-section 
+{
+  flex-basis: 30%;
+  margin-bottom: 30px;
+}
+  
+.footer-section h3 
+{
+  margin-top: 0;
+  margin-bottom: 15px;
+  font-size: 18px;
+}
+/* Style des paragraphes et des listes dans les sections du pied de page */
+.footer-section p,
+.footer-section ul 
+{
+  font-size: 14px;
+}
+  
+.footer-section ul 
+{
+  list-style-type: none;
+  padding: 0;
+}
+/* Style des liens dans les listes du pied de page */
+.footer-section ul li a 
+{
+  color: #fff;
+  text-decoration: none;
+}
+/* Change la couleur des liens et ajoute un soulignement lorsqu'ils sont survolés */
+.footer-section ul li a:hover 
+{
+  color: #ccc;
+  text-decoration: underline;
+}
+  
+.footer-bottom 
+{
+  text-align: center;
+  font-size: 12px;
+  padding: 10px;
+  background-color: #222;
+  margin-top: 20px;
+}
+  
+/* Style pour les écrans dont la largeur est inférieure ou égale a 768 pixels */
+@media (max-width: 768px) 
+{
+  .footer-section
+  {
+    flex-basis: 100%;
+    text-align: center;
+  }
+}

@@ -1,0 +1,252 @@
+/* Definit la taille du logo dans la barre de navigation */
+.nav_logo
+{
+  width: 200px;
+  height: 100px;
+}
+
+nav
+{
+  display: flex;
+  justify-content: space-around;
+  background-color: rgba(0, 0, 0, 0.494);/* Couleur d'arriére-plan semi-transparente */
+}
+  
+.menu
+{ 
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+  
+.menu li
+{
+  padding: 0px 2em;         /* Ajoute un espace horizontal autour des elements de liste */
+  list-style-type: none;    /* Supprime les puces des elements de liste */
+}
+
+/* Style pour les liens du menu */
+.menu li a 
+{
+  text-decoration: none;    /* Supprime le soulignement des liens */
+  color: antiquewhite;
+}
+/* Change la couleur des links lorsqu'ils sont survolés */
+nav ul li a:hover
+{
+  color: darkcyan;
+}
+
+/* Style pour le block1  */
+.block1 
+{
+  border: 7px solid black; 
+  color: whitesmoke;
+  background-color: black;
+  border-radius: 5px; 
+}
+/* Style pour la photo */
+.photo
+{ 
+  width: 1295px ; 
+  filter: brightness(80%); 
+}
+
+/* Style pour le container */
+.container {
+  position: absolute;
+  top: 20%;
+  left: 5%;
+  color: black;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+/* Style pour le corps de la page */
+body {
+  background-image: linear-gradient(to right, rgb(0, 0, 0), rgb(59, 59, 60));
+}
+
+/* Style pour les elements a l'intérieur du block1 */
+.block1 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 10px;
+}
+
+/* Style pour le texte a l'interieur du block1 */
+.block1_texte {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Roboto Slab', serif;
+}
+
+/* Style pour le titre h1 a l'interieur du block1_texte */
+.block1_texte h1 {
+  color: gray;
+  text-align: center;
+  width: 100%;
+  font-family: 'Roboto Slab', serif;
+}
+
+/* Style pour la video a l'intérieur du block1 */
+.block1_video {
+  width: 50%;
+}
+
+/* Style pour le block2 */
+.block2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-wrap: wrap;
+}
+
+/* Style pour le titre a l'intérieur du block2 */
+.block2_titre {
+  color: gray;
+}
+
+/* Style pour les images a l'intérieur du block2 */
+.block2_img {
+  display: inline-block;
+  width: 30%;
+  height: auto;
+  margin: 0 10px;
+}
+
+/* Style pour le titre h1 à l'interieur du cathegorie-section */
+.cathegorie-section h1 {
+  color: gray;
+  text-align: center;
+  font-size: 2rem;
+}
+
+
+.cathegorie-container 
+{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  padding: 20px;
+  background-image: linear-gradient(to right, darkcyan, gray);
+}
+/* Style pour les éléments cathegorie a l'interieur du cathegorie-container */
+.cathegorie 
+{
+  max-width: 200px;
+  height: auto;
+  border: 2px solid #e0e0e0;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+/* Style pour le block3 */
+.block3
+{
+  color: #ccc;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-wrap: wrap;
+}
+
+
+ /* media queries pour telephone  */
+@media (max-width: 480px) 
+{
+  body 
+  {
+    font-size: 14px;
+  }
+}
+
+/* Media query pour les tablettes */
+@media (min-width: 481px) and (max-width: 768px) 
+{
+  body 
+  {
+    font-size: 16px;
+  }
+}
+
+/* Style du pied de page */
+footer 
+{
+  background-color: #333;
+  color: #fff;
+}
+  
+.footer-container 
+{
+  display: flex;
+  justify-content: space-between;
+  padding: 30px;
+  flex-wrap: wrap;
+}
+  
+.footer-section 
+{
+  flex-basis: 30%;
+  margin-bottom: 30px;
+}
+  
+.footer-section h3 
+{
+  margin-top: 0;
+  margin-bottom: 15px;
+  font-size: 18px;
+}
+/* Style des paragraphes et des listes dans les sections du pied de page */
+.footer-section p,
+.footer-section ul 
+{
+  font-size: 14px;
+}
+  
+.footer-section ul 
+{
+  list-style-type: none;
+  padding: 0;
+}
+/* Style des liens dans les listes du pied de page */
+.footer-section ul li a 
+{
+  color: #fff;
+  text-decoration: none;
+}
+/* Change la couleur des liens et ajoute un soulignement lorsqu'ils sont survolés */
+.footer-section ul li a:hover 
+{
+  color: #ccc;
+  text-decoration: underline;
+}
+  
+.footer-bottom 
+{
+  text-align: center;
+  font-size: 12px;
+  padding: 10px;
+  background-color: #222;
+  margin-top: 20px;
+}
+  
+/* Style pour les écrans dont la largeur est inférieure ou égale a 768 pixels */
+@media (max-width: 768px) 
+{
+  .footer-section
+  {
+    flex-basis: 100%;
+    text-align: center;
+  }
+}
+

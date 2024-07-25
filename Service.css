@@ -1,0 +1,165 @@
+.nav_logo
+{
+  width: 200px;
+  height: 100px;
+}
+
+nav
+{
+  display: flex;
+  justify-content: space-around;
+  background-color: rgba(0, 0, 0, 0.494);
+}
+  
+.menu
+{ 
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+  
+.menu li
+{
+  padding: 0px 2em;
+  list-style-type: none;
+}
+  
+.menu li a 
+{
+  text-decoration: none;
+  color: antiquewhite;
+}
+
+nav ul li a:hover
+{
+  color: darkcyan;
+}
+
+body
+{    
+  background-image: url(img/mansory_venatus_coupe_30.webp);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed; 
+  min-height: 100vh;
+}
+
+body 
+{
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+}
+  
+main 
+{
+  padding: 2rem;
+}
+  
+h2 
+{
+  border-bottom: 3px solid #333;
+  padding-bottom: 0.5rem;
+}
+  
+.service 
+{
+  background-color: #f4f4f4;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-bottom: 1.5rem;
+  padding: 1rem;
+}
+  /* media queries pour telephone  */
+@media (max-width: 480px) 
+{
+  body 
+  {
+    font-size: 14px;
+  }
+}
+
+/* Media query pour les tablettes */
+@media (min-width: 481px) and (max-width: 768px) 
+{
+  body 
+  {
+    font-size: 16px;
+  } 
+}
+  
+footer 
+{
+  background-color: #333;
+  color: #fff;
+}
+  
+.footer-container 
+{
+  display: flex;
+  justify-content: space-between;
+  padding: 30px;
+  flex-wrap: wrap;
+}
+  
+.footer-section 
+{
+  flex-basis: 30%;
+  margin-bottom: 30px;
+}
+  
+.footer-section h3 
+{
+  margin-top: 0;
+  margin-bottom: 15px;
+  font-size: 18px;
+}
+  
+.footer-section p,
+.footer-section ul 
+{
+  font-size: 14px;
+}
+  
+.footer-section ul 
+{
+  list-style-type: none;
+  padding: 0;
+}
+  
+.footer-section ul li a 
+{
+  color: #fff;
+  text-decoration: none;
+}
+  
+.footer-section ul li a:hover 
+{
+  color: #ccc;
+  text-decoration: underline;
+}
+  
+.footer-bottom 
+{
+  text-align: center;
+  font-size: 12px;
+  padding: 10px;
+  background-color: #222;
+  margin-top: 20px;
+}
+  
+  
+@media (max-width: 768px) 
+{
+  .footer-section
+  {
+    flex-basis: 100%;
+    text-align: center;
+  }
+}
+  
+      
+  
